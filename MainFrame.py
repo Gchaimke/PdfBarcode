@@ -266,16 +266,16 @@ class MainFrame(wx.Frame):
 			if barcode is not None:
 				print(pdf, " ", barcode)
 				new_name = '{}.pdf'.format(barcode)
-				# move(pdf, join(config['output_folder'], new_name))
-				copyfile(pdf, join(recognized_folder, new_name))
+				# copyfile(pdf, join(recognized_folder, new_name))
+				move(pdf, join(recognized_folder, new_name))
 				self.list_recognized.InsertItem(recognized, barcode)
 				print(barcode)
 				recognized += 1
 			else:
 				self.list_not_recognized.InsertItem(not_recognized, date_time)
 				print(date_time)
-				# move(pdf, join(not_recognized_folder, new_name))
-				copyfile(pdf, join(not_recognized_folder, new_name))
+				# copyfile(pdf, join(not_recognized_folder, new_name))
+				move(pdf, join(not_recognized_folder, new_name))
 				not_recognized += 1
 			
 			self.progress_gauge.SetValue(progress)

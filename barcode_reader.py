@@ -14,5 +14,5 @@ class PdfBarcode(wx.App):
 
 
 if __name__ == "__main__":
-	app = PdfBarcode(0)
+	app = PdfBarcode()
 	app.MainLoop()
