@@ -14,7 +14,6 @@ from pathlib import Path
 import configparser
 import threading
 
-poppler_path = r"poppler_21_03_0"
 config = configparser.ConfigParser()
 
 conf_file = Path('config.ini')
@@ -26,6 +25,7 @@ else:
 	config.set("default", "output_folder", "pdf\\output")
 	config.set("default", "regex", "^0[3,0][0,6,9]\\d+$")
 	config.set("default", "wait", 'False')
+	config.set("default", "poppler_path", 'poppler_21_03_0')
 	config.set("default", "tumb_folder", '~\\Pictures')
 	config.set("default", "language", 'he')
 	config_file = open("config.ini", 'w')
@@ -35,6 +35,7 @@ else:
 
 config = config['default']
 
+poppler_path = config.get('poppler_path')
 
 # end wxGlade
 
