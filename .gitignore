@@ -2,3 +2,4 @@ __pycache__
 /test_pdf/*
 /output/pdf/output/*
 /pdf/*
+/tmp/*

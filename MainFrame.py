@@ -47,12 +47,12 @@ class MainFrame(wx.Frame):
 		he.install()
 		
 		self.preview_image_size = (400, 500)
-		self.preview_image_path = "C:/Users/gchaim/Desktop/PdfBarcode/pdf/tmp/test (1).jpeg"
+		self.preview_image_path = ""
 		kwds["style"] = kwds.get("style", 0) | wx.DEFAULT_FRAME_STYLE | wx.FULL_REPAINT_ON_RESIZE
 		wx.Frame.__init__(self, *args, **kwds)
 		self.SetTitle(_("PdfBarcode"))
 		_icon = wx.NullIcon
-		_icon.CopyFromBitmap(wx.Bitmap("C:\\Users\\gchaim\\Pictures\\PdfBarcode.png", wx.BITMAP_TYPE_ANY))
+		_icon.CopyFromBitmap(wx.Bitmap("icons\PdfBarcode.png", wx.BITMAP_TYPE_ANY))
 		self.SetIcon(_icon)
 		
 		# Menu Bar

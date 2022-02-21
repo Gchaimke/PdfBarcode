@@ -48,7 +48,7 @@ class MyFrame(wx.Frame):
 
 								sizer_11 = wx.BoxSizer(wx.HORIZONTAL)
 
-								bitmap_1 = wx.StaticBitmap(self.panel_5, wx.ID_ANY, wx.Bitmap("C:/Users/gchaim/Desktop/PdfBarcode/img/tmp0001.png", wx.BITMAP_TYPE_ANY))
+								bitmap_1 = wx.StaticBitmap(self.panel_5, wx.ID_ANY, wx.Bitmap("tmp/tmp0001.png", wx.BITMAP_TYPE_ANY))
 								sizer_11.Add(bitmap_1, 0, 0, 0)
 
 								self.panel_6 = wx.ScrolledWindow(self, wx.ID_ANY, style=wx.TAB_TRAVERSAL)

@@ -18,7 +18,7 @@ class MainFrame(wx.Frame):
 		wx.Frame.__init__(self, *args, **kwds)
 		self.SetTitle(_("PdfBarcode"))
 		_icon = wx.NullIcon
-		_icon.CopyFromBitmap(wx.Bitmap("C:\\Users\\gchaim\\Pictures\\PdfBarcode.png", wx.BITMAP_TYPE_ANY))
+		_icon.CopyFromBitmap(wx.Bitmap("icons/PdfBarcode.png", wx.BITMAP_TYPE_ANY))
 		self.SetIcon(_icon)
 
 		# Menu Bar
@@ -40,7 +40,7 @@ class MainFrame(wx.Frame):
 
 		hbox_preview = wx.FlexGridSizer(1, 1, 0, 0)
 
-		image_preview = wx.StaticBitmap(self.previw_pane, wx.ID_ANY, wx.Bitmap("C:/Users/gchaim/Desktop/PdfBarcode/img/tmp0001.png", wx.BITMAP_TYPE_ANY))
+		image_preview = wx.StaticBitmap(self.previw_pane, wx.ID_ANY, wx.Bitmap("tmp/tmp0001.png", wx.BITMAP_TYPE_ANY))
 		hbox_preview.Add(image_preview, 0, wx.ALL | wx.EXPAND, 10)
 
 		self.recognation_pane = wx.Panel(self.spliter_window, wx.ID_ANY)
